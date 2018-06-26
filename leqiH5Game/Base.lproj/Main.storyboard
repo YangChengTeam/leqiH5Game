@@ -17,13 +17,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lanuch" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-RX-OMn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="加载10%..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rXx-il-MYQ">
+                                <rect key="frame" x="-10" y="630" width="395" height="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fr4-RX-OMn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0H3-Vn-xt3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rXx-il-MYQ" secondAttribute="bottom" constant="20" id="Lw3-DC-qtP"/>
+                            <constraint firstItem="fr4-RX-OMn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aIm-m7-Li7"/>
+                            <constraint firstItem="fr4-RX-OMn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ctu-IV-Cb7"/>
+                            <constraint firstItem="fr4-RX-OMn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="eAK-j1-znR"/>
+                            <constraint firstItem="rXx-il-MYQ" firstAttribute="centerX" secondItem="fr4-RX-OMn" secondAttribute="centerX" id="pdh-wd-S1o"/>
+                            <constraint firstItem="rXx-il-MYQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="10" id="uyr-RO-cZv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="gameImageView" destination="fr4-RX-OMn" id="pda-vG-Oti"/>
+                        <outlet property="gameProcessTextField" destination="rXx-il-MYQ" id="RqR-pS-wGO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lanuch" width="414" height="736"/>
+    </resources>
 </document>
